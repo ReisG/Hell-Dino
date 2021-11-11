@@ -8,6 +8,7 @@ from modules.interface.health_bar import Health
 import arcade
 import os
 
+os.system('clear||cls')
 
 WIDTH = 600
 HEIGHT = 337
@@ -90,7 +91,7 @@ class Game(arcade.Window):
             col = arcade.check_for_collision_with_list(self.Dino.sprite, self.enemies[en].sprite_list)
             if len(col) != 0 and self.immortal < 0:
                 self.health.health_down()
-                self.immortal = 60
+                self.immortal = 100
                 self.Dino.start_blink()
             if self.enemies[en].terminate:
                 self.enemies.pop(en)

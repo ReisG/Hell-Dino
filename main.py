@@ -1,8 +1,8 @@
 from random import randint, choice
 
-from modules.dino import Dino
-from modules.enemies import Kaktus, Pterodactyl
-from modules.interface.health_bar import Health
+from Hell_dino.dino import Dino
+from Hell_dino.enemies import Kaktus, Pterodactyl
+from Hell_dino.interface.health_bar import Health
 # from modules.interface.score import start
 
 import arcade
